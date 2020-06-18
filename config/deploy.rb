@@ -9,7 +9,8 @@ set :rbenv_type, :system
 set :rbenv_ruby, '2.7.1'
 set :rbenv_path, '/usr/local/rbenv'
 
-append :linked_dirs, '.bundle'
+append :linked_files, "config/database.yml", "config/master.key"
+append :linked_dirs, ".bundle", "log", "tmp/pids", "tmp/cache", "tmp/sockets"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
