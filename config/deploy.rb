@@ -2,7 +2,8 @@
 lock "~> 3.14.1"
 
 set :application, "sample_ror0618"
-set :repo_url, "git@github.com:nyshk97/ror0618.git"
+# set :repo_url, "git@github.com:nyshk97/ror0618.git"
+set :repo_url, 'https://238b62cb6356dfcedd0815710a4440095c202fbf:@github.com/nyshk97/ror0618.git'
 set :deploy_to, "/var/www/html/namatsuba"
 
 set :rbenv_type, :system
